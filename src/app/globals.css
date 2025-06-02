@@ -127,17 +127,27 @@ table {
 
 /******** Reset end ********/
 
+/******** Variables end ********/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ededed;
+
+  --text-primary: #febe10;
+  --text-primary-hover: #fffb00;
+  --text-secondary: #a8a8a8;
+
+  --border-color-regular: #818589;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171717;
     --foreground: #ededed;
   }
 }
+
+/******** Variables end ********/
 
 html,
 body {
@@ -148,9 +158,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-noto-sans);
 }
 
 * {
@@ -162,6 +170,23 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+
+  p {
+    color: var(--text-secondary);
+
+    &:hover {
+      color: var(--text-primary-hover);
+    }
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
