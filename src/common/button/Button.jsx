@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./Button.module.css";
+import Link from "next/link";
 
 export const Button = ({
   children,
@@ -13,14 +14,14 @@ export const Button = ({
 
   if (href)
     return (
-      <a
+      <Link
         href={href}
         className={buttonClassName}
         onClick={onClick}
         disabled={disabled}
       >
         {children}
-      </a>
+      </Link>
     );
 
   return (
