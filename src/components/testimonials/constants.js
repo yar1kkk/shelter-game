@@ -28,7 +28,7 @@ export const testimonials = [
   },
   {
     name: "Vadym",
-    feedback: "ВИНОСИМ ПЕРШОЮ ПОВАРИХУ БЛ*ТЬ",
+    feedback: "ВИНОСИМ ПЕРШОЮ ПОВАРИХУ",
     image: Vadym,
   },
 ];
